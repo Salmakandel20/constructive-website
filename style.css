@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --maincolor:#ffe527;
+}
+section{
+    padding:100px 0px;
+}
+.section_title{
+    position: relative;
+    display: inline-block;
+}
+.section_title:before{
+    content: "";
+    width: 120px;
+    height: 5px;
+    background-color: var(--maincolor);
+    position: absolute;
+    bottom:-5px;
+ left: auto;
+ right: 0;
+}
+
+.navbar{
+    box-shadow: 1px 2px 5px #ebebeb;
+    direction: rtl;
+}
+.nav-item{
+    margin: 0px 3px;
+}
+
+@media (max-width:750px) {
+    body{
+        font-size: 12px;
+    }
+    
+
+    
+}
+/* start slider */
+.Home{
+    min-height: 90vh;
+    background: url(images/slide-bg-1.jpg) no-repeat;
+    background-size: cover;
+    
+
+}
+.Home-item{
+    width: 50%;
+}
+.Home-item h2{
+    font-size: 1.8em;
+    font-weight: 600;
+}
+.Home-item p{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+@media (max-width:768px) {
+    .Home-item{
+        width: 100%;
+    }
+    .Home-item h2{
+        font-size: 1.3em;
+       }
+       .Home-item p{
+           font-size: 1em
+       }
+    
+}
+/* end xslider */
+/* start news */
+.news{
+    direction: rtl;
+}
+.news_sections{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-around;
+
+}
+.news_section{
+    display: flex;
+    align-items: center;
+}
+
+.section_image img{
+    width: 100%;
+}
+.section-body{
+    padding-right: 4px;
+}
+.section-text{
+    margin:0px;
+}
+/* end news */
+/* start subcribe */
+.subscribe{
+    min-height: 90vh;
+    background: url(images/slide-bg-2.jpg) no-repeat;
+    background-size: cover;
+    color: white;
+
+
+}
+
+.sub_input input ,.sub_input button{
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px 16px;
+    background-color: rgb(226 209 179);
+}
+.sub_input button{
+    background-color: rgb(255 197 39);
+    border: none;
+}
+@media (max-width:760px){
+    .sub_input input ,.sub_input button{
+        border-radius: 0px;}
+}
+
+/* end subscribe */
